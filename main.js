@@ -38,6 +38,7 @@ function setAttackDice(number){
 }
 
 function displayDice(){
+    document.getElementById("dice").readOnly = true;
     document.getElementById("dice").innerHTML = `
     <p> Attackers Dice </p>${stringBuild(attack)}<p> Defenders Dice </p>${stringBuild(defense)}`
 }
